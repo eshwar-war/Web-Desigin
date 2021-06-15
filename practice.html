@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>pracice</title>
+        <link rel="stylesheet" href="css/style.css" type="text/css" />
+        <script>
+            function printDocument() {
+                var inputTextRef= document.getElementById("textInput")
+                var inputEmailRef= document.getElementById("emailInput")
+                var inputNumberRef=document.getElementById("numberInput")
+                var inputCountryRef= document.getElementById("countryInput")
+                var inputCityRef= document.getElementById("cityInput")
+                var inputPassword= document.getElementById("passwordInput")
+
+                   var textInputValue =  inputTextRef.value
+                   var EmailInputValue = inputEmailRef.value
+                   var numberInputValue = inputNumberRef.value
+                   var countryInputValue= inputCountryRef.value
+                   var cityInputValue= inputCityRef.value
+                   var passwordInputValue=inputPassword.value
+
+
+                   var info ={
+                       name:textInputValue,
+                       email:EmailInputValue,
+                       number:numberInputValue,
+                       country:countryInputValue,
+                       city:cityInputValue,
+                       password:passwordInputValue
+                       
+                   
+                   }
+                   console.log(info)
+            }
+
+        </script>
+    </head>
+    <body>
+        
+
+        <div class=control>
+
+            <form>
+                 <div class="h1">
+                <h1>Login  Enquiry</h1></div>
+                    <div>
+                <input   type="text" class="form-control"  placeholder="Enter your name" id="textInput"/>
+            </div><br>
+
+
+            <div>
+                <input   type="text" class="form-control"  placeholder="Enter your email" id="emailInput" />
+            </div><br>
+
+            <div>
+                <input   type="number" class="form-control"  placeholder="contact number" id="numberInput" />
+            </div><br>
+
+            <div>
+                <input   type="text"  class="form-control" placeholder="country" id="countryInput"/>
+            </div><br>
+
+            <div>
+                <input   type="text" class="form-control"  placeholder="city" id="cityInput"/>
+            </div><br>
+
+                <div>
+                <input   type="password" class="form-control"  placeholder="password" id="passwordInput"  />
+            </div><br>
+
+               <div>
+                <input type="button" class="btn-style" value="login" onclick="printDocument()"/>
+            </div><br>
+        </div>
+            </form>
+            </div>
+        </div>
+
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+</html>
